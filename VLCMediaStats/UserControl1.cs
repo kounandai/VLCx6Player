@@ -24,7 +24,7 @@ namespace VLCMediaStats
 
         public void update_stats(float bitrate, int lost_pictures)
         {
-            this.label_value_bitrate.Text = Math.Floor(bitrate * 1000).ToString();
+            this.label_value_bitrate.Text = Math.Round(bitrate * 10, 3).ToString();
             this.label_value_lost.Text = lost_pictures.ToString();
         }
 
